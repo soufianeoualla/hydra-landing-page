@@ -1,5 +1,6 @@
 import Header from "@components/Header";
-import Hero from "./components/Hero";
+import Hero from "@components/Hero";
+import Footer from "@components/Footer";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div className="max-w-screen-xl mx-auto">
         <Header />
         <Hero />
+        <Footer/>
       </div>
     </main>
   );
