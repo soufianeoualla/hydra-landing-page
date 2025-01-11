@@ -8,7 +8,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-gradient-custom text-primary hover:bg-gradient-custom/90",
+        default: "bg-gradient-custom text-primary hover:bg-gradient-custom/90 hover:scale-[1.02]",
         secondary:
           "bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary",
       },

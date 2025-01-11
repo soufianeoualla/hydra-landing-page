@@ -3,9 +3,9 @@ import Facebook from "@assets/facebook.svg";
 import Twitter from "@assets/twitter.svg";
 import Linkedin from "@assets/linkedin.svg";
 import Instagram from "@assets/instagram.svg";
-import { Button } from "./Button";
-import { cn } from "../utils/tailwindMerge";
+import { Button } from "./ui/Button";
 import NavLink from "./NavLink";
+import Divider from "./ui/Divider";
 
 const firstLinks = [
   {
@@ -77,25 +77,7 @@ const IconWrapper = ({ Icon }: { Icon: string }) => {
   return <img src={Icon} alt="icon" width={32} height={32} />;
 };
 
-const Divider = ({
-  height,
-  width,
-  className,
-}: {
-  height?: string;
-  width?: string;
-  className?: string;
-}) => {
-  return (
-    <div
-      className={cn("bg-footer-gradient ml-24 mr-14", className)}
-      style={{
-        height: height ?? "186px",
-        width: width ?? "6px",
-      }}
-    />
-  );
-};
+
 
 const Footer = () => {
   return (

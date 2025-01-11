@@ -1,6 +1,6 @@
 import logo from "@assets/logo.svg";
 import hydra from "@assets/hydra.svg";
-import { Button } from "./Button";
+import { Button } from "./ui/Button";
 import NavLink from "./NavLink";
 
 const menuLinks = [

@@ -1,6 +1,7 @@
 import Header from "@components/Header";
 import Hero from "@components/Hero";
 import Footer from "@components/Footer";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="max-w-screen-xl mx-auto">
         <Header />
         <Hero />
+        <ContactForm />
         <Footer/>
       </div>
     </main>

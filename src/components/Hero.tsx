@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { Button } from "./Button";
+import { Button } from "./ui/Button";
 import hero_image from "@assets/hero-image.png";
 
 const Span = ({ text }: { text: string }) => {
