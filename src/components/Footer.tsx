@@ -6,6 +6,9 @@ import Instagram from "@assets/instagram.svg";
 import { Button } from "./ui/Button";
 import NavLink from "./NavLink";
 import Divider from "./ui/Divider";
+import line_1 from "../assets/line-footer-1.png";
+import line_2 from "../assets/line-footer-2.png";
+import Layout from "./ui/Layout";
 
 const firstLinks = [
   {
@@ -77,12 +80,13 @@ const IconWrapper = ({ Icon }: { Icon: string }) => {
   return <img src={Icon} alt="icon" width={32} height={32} />;
 };
 
-
-
 const Footer = () => {
   return (
-    <footer className="mt-8">
-      <div className="flex justify-between items-start">
+    <footer className="mt-8 relative">
+      <img src={line_2} alt="" className="absolute -translate-y-1/4 w-screen" />
+      <img src={line_1} alt="" className="absolute -top-10 w-screen" />
+
+      <Layout className="flex justify-between items-start relative">
         <img src={logo} alt="logo" height={186} />
 
         <Divider />
@@ -99,8 +103,7 @@ const Footer = () => {
           </div>
           <Button>BUILD YOUR WORLD</Button>
         </div>
-      </div>
-
+      </Layout>
       <Divider height="1px" width="100%" className="mt-20 mx-0" />
 
       <b className="mt-12 mb-4 flex justify-center items-center">

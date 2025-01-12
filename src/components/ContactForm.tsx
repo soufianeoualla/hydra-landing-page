@@ -12,7 +12,6 @@ import {
 import { Button } from "./ui/Button";
 import { Input } from "./ui/Input";
 import { Textarea } from "./ui/Textarea";
-import { Divide } from "lucide-react";
 import Divider from "./ui/Divider";
 
 const formSchema = z.object({
@@ -54,13 +53,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section
-      className="my-28 px-28 py-24 rounded-[100px]"
-      style={{
-        background:
-          "radial-gradient(circle, rgba(64,58,95,1) 0%, rgba(33,30,46,1) 100%)",
-      }}
-    >
+    <section className="my-28 px-28 py-24 rounded-[100px] bg-radial-gradient">
       <div className="flex flex-col justify-center items-center w-full mb-16">
         <h1 className="font-bold text-4xl">JOIN HYDRA</h1>
         <Divider width="410px" height="1px" className="mx-0 mt-7 mb-6" />
